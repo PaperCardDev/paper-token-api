@@ -5,6 +5,8 @@ import java.util.UUID;
 public record TokenInfo(
         UUID token,
         UUID playerId,
-        long expires
+        long expires,
+
+        String name
 ) {
 }

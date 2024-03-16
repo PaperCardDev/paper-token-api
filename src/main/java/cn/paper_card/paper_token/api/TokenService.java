@@ -7,7 +7,7 @@ import java.util.UUID;
 
 @SuppressWarnings("unused")
 public interface TokenService {
-    @NotNull TokenInfo create(@NotNull UUID playerId) throws Exception;
+    @NotNull TokenInfo create(@NotNull UUID playerId, @NotNull String name) throws Exception;
 
     @Nullable TokenInfo query(@NotNull UUID token) throws Exception;
 }
